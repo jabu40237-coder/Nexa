@@ -1,0 +1,11 @@
+# Netlify config for Next.js
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Next.js plugin - native Netlify support
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
