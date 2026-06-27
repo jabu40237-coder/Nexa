@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: nexa
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: PARTNER_API_KEY
+        sync: false
+      - key: NODE_VERSION
+        value: 22
